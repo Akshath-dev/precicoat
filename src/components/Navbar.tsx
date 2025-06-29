@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { name: "About Us", href: "#about" },
-  { name: "Solutions", href: "#solutions" },
-  { name: "Store", href: "#store" },
-  { name: "Work With Us", href: "#work" },
-  { name: "More", href: "#more" },
+  { name: "About Us", href: "/about" }, // Changed from "#about" to "/about"
+  { name: "Solutions", href: "/solutions" }, // Changed from "#solutions" to "/solutions"
+  { name: "Store", href: "/store" }, // Changed from "#store" to "/store"
+  { name: "Work With Us", href: "/work-with-us" }, // Changed from "#work" to "/work-with-us"
+  { name: "More", href: "/more" }, // Changed from "#more" to "/more"
 ];
 
 export default function Navbar() {
@@ -51,7 +51,7 @@ export default function Navbar() {
           {/* Contact Button */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="#contact"
+              href="/contact" // Changed from "#contact" to "/contact"
               className="bg-[#ff6700] hover:bg-[#e55a00] text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Contact
@@ -107,7 +107,7 @@ export default function Navbar() {
               ))}
               <div className="pt-2">
                 <Link
-                  href="#contact"
+                  href="/contact" // Changed from "#contact" to "/contact"
                   className="bg-[#ff6700] hover:bg-[#e55a00] text-white block px-3 py-2 text-base font-semibold transition-colors duration-200 rounded-md text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

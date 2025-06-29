@@ -153,8 +153,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="h-12 w-48 bg-gray-700 rounded flex items-center justify-center mb-4">
-                <span className="text-sm font-bold text-gray-300">Precicoat Logo</span>
+              <div className="h-12 w-48 flex items-center justify-center mb-4">
+                <img
+                  src="/precicoat-logo.png"
+                  alt="Precicoat Pumptronix Logo"
+                  className="h-10 w-auto object-contain rounded-lg"
+                  style={{ maxWidth: "100%" }}
+                />
               </div>
               <p className="text-gray-300">Leading supplier of production machinery for the electronics industry in Mexico and the United States.</p>
             </div>
